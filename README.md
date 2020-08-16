@@ -1,5 +1,9 @@
 # Basic Commands: PODS
 
+To Create replication Controller
+
+`kubectl apply -f <pod definition file>`
+
 To know about how many pods are in running state
 
 `kubectl get pods`
@@ -13,7 +17,7 @@ To get complete information about pod details
 `kubectl describe pods <pod-name>`
 
 
-# Relication Controller : 
+# Relication Controller 
 
 To Create replication Controller
 
