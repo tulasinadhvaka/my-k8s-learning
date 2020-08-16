@@ -43,3 +43,5 @@ To get the details about Replicasets created
 To get details about how to create replicaset
 `kubectl explain replicaset`
 
+To update Existing ReplicaSet
+`kubectl edit replicaset new-replica-set`
