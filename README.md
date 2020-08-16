@@ -1,8 +1,4 @@
-# Basic Commands: PODS
-
-To Create replication Controller
-
-`kubectl apply -f <pod definition file>`
+# # Basic Commands: get
 
 To know about how many pods are in running state
 
@@ -11,6 +7,27 @@ To know about how many pods are in running state
 To get detailed report of pods
 
 `kubectl get pods -o wide`
+
+To get definition of pod
+
+`kubectl get pods <podname> -o yaml`
+
+# Basic Commands: delete
+
+To delete a pod
+
+`kubectl delete pods <podname>`
+
+# Basic Commands: describe
+
+To get more details about a pod
+`kubectl describe pods <podname>`
+
+# Basic Commands: PODS
+
+To Create replication Controller
+
+`kubectl apply -f <pod definition file>`
 
 To get complete information about pod details
 
@@ -45,3 +62,11 @@ To get details about how to create replicaset
 
 To update Existing ReplicaSet
 `kubectl edit replicaset new-replica-set`
+
+To Scale Replicas to certain number
+
+`kubectl scale replicaset new-replica-set --replicas=5`
+
+To autoscale replicas
+
+`kubectl autoscale rs frontend --max=10 --min=3 --cpu-percent=50`
