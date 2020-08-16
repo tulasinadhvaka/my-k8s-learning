@@ -26,3 +26,20 @@ To Create replication Controller
 Check on the status of the ReplicationController using this command:
 
 `kubectl describe replicationcontrollers <name of the rc>`
+
+
+# ReplicaSet
+
+To create ReplicaSet
+
+`kubectl create -f replicaset-definition-1.yaml`
+
+To get the details about Replicasets created
+
+`kubectl get rs`
+
+`kubectl get replicaset`
+
+To get details about how to create replicaset
+`kubectl explain replicaset`
+
