@@ -95,3 +95,27 @@ To Scale Replicas to certain number
 To autoscale replicas
 
 `kubectl autoscale rs frontend --max=10 --min=3 --cpu-percent=50`
+
+# Namespaces
+
+To get current Namespace
+
+`kubectl get ns`
+
+To Create namespace
+
+`kubectl create namespace <namespace-name>`
+
+To delete a namespace.
+
+`kubectl delete namespace <namespace name>`
+
+Change Namespace
+
+`kubectl config set-context --current --namespace=my-namespace`
+
+# Services
+
+To get current Namespace
+
+`kubectl get services` `kubectl get svc`
