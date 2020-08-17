@@ -33,3 +33,23 @@ tolerations:
   operator: "Equal"
   value: "value"
   effect: "NoSchedule"
+```
+
+# Affinity
+To apply lable to the node
+
+`kubectl label node node01 color=blue`
+
+Apply affinity in pods to run on specified nodes
+
+```
+affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: color
+            operator: In
+            value:
+            - blue
+```
