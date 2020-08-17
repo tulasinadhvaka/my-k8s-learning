@@ -119,3 +119,24 @@ Change Namespace
 To get current Namespace
 
 `kubectl get services` `kubectl get svc`
+
+# Imperative
+Create an NGINX Pod
+
+`kubectl run nginx --image=nginx`
+
+`kubectl run nginx --image=nginx  --dry-run=client -o yaml`
+
+`kubectl create deployment --image=nginx nginx`
+
+`kubectl create deployment --image=nginx nginx --dry-run=client -o yaml`
+
+`kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml`
+
+ClusterIP
+
+`kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml`
+
+NodePort
+
+`kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml`
