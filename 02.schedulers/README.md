@@ -27,8 +27,8 @@ kubectl taint nodes node1 key=value:NoSchedule-
 
 eg: tolerance 
 
-`tolerations:
+```tolerations:
 - key: "key"
   operator: "Equal"
   value: "value"
-  effect: "NoSchedule" `
+  effect: "NoSchedule" ```
